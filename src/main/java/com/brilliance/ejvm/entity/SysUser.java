@@ -3,6 +3,7 @@ package com.brilliance.ejvm.entity;
 
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableName;
+import com.brilliance.ejvm.mapper.SysUserMapper;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 
@@ -419,4 +420,9 @@ public class SysUser extends BaseModel {
                 .add("gmsState", gmsState)
                 .toString();
     }
+
+    public static void print(SysUser sysUser) {
+        System.out.println(sysUser.toString());
+    }
+
 }
