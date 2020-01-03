@@ -31,6 +31,6 @@ public class App
         app.run(args);
 
         IExecuteService executeService = (IExecuteService) SpringContextUtils.getBean("defaultExecuteService", ExecuteServiceImpl.class);
-        executeService.execute();
+        executeService.produder();
     }
 }
